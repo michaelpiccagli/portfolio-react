@@ -1,0 +1,127 @@
+.skills .container-skills {
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .skills .container-skills .skill {
+    max-width: 300px;
+    height: 400px;
+    padding: 40px 20px;
+    border-radius: 10px;
+  }
+  
+  .skills .container-skills .skill.html {
+    animation: c-glowing-html 1.2s ease-in-out infinite;
+    animation-direction: alternate;
+    background-color: var(--light-gray-background-color);
+  }
+  
+  .skills .container-skills .skill.css {
+    animation: c-glowing-css 1.2s ease-in-out infinite;
+    animation-direction: alternate;
+    background-color: var(--light-gray-background-color);
+  }
+  
+  .skills .container-skills .skill.javascript {
+    animation: c-glowing-javascript 1.2s ease-in-out infinite;
+    animation-direction: alternate;
+    background-color: var(--light-gray-background-color);
+  }
+  
+  .skills .container-skills .skill.github {
+    animation: c-glowing-github 1.2s ease-in-out infinite;
+    animation-direction: alternate;
+    background-color: var(--light-gray-background-color);
+  }
+  
+  .skills .container-skills .skill.react {
+    animation: c-glowing-react 1.2s ease-in-out infinite;
+    animation-direction: alternate;
+    background-color: var(--light-gray-background-color);
+  }
+  
+  .skills .container-skills .skill.sass {
+    animation: c-glowing-sass 1.2s ease-in-out infinite;
+    animation-direction: alternate;
+    background-color: var(--light-gray-background-color);
+  }
+  
+  .skills .container-skills .skill.git {
+    animation: c-glowing-git 1.2s ease-in-out infinite;
+    animation-direction: alternate;
+    background-color: var(--light-gray-background-color);
+  }
+  
+  .skills_card::after {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    background: var(--container-color);
+    border-radius: 20px;
+  }
+  
+  .skills .container-skills .skill:hover {
+    color: var(--secondary-color);
+  }
+  
+  .skills .container-skills .skill p,
+  .skills .container-skills .skill h3,
+  .skills .container-skills .skill .logo i {
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+  }
+  
+  .skills .container-skills .skill h3 {
+    color: var(--white-color);
+    font-size: var(--extra-large-font);
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  .skills .container-skills .skill .html,
+  .devicon-html5-plain-wordmark {
+    color: #e53a2d;
+  }
+  
+  .skills .container-skills .skill .javascript,
+  .devicon-javascript-plain {
+    color: #ead41c;
+  }
+  
+  .skills .container-skills .skill .css,
+  .devicon-css3-plain-wordmark {
+    color: #3492cb;
+  }
+  
+  .skills .container-skills .skill .github,
+  .devicon-github-original {
+    color: #000000;
+  }
+  
+  .skills .container-skills .skill .react,
+  .devicon-react-original {
+    color: #5ccfee;
+  }
+  
+  .skills .container-skills .skill .sass,
+  .devicon-sass-original {
+    color: #bf4080;
+  }
+  
+  .skills .container-skills .skill .git,
+  .devicon-git-plain {
+    color: #e53a2d;
+  }
+  
+  .skills .container-skills .skill p {
+    font-size: 1.8rem;
+    font-family: var(--secondary-letter);
+  }
+  
+  .skills .container-skills .skill i {
+    font-size: 9rem;
+  }
