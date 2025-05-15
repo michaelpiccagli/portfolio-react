@@ -43,10 +43,8 @@ const About = () => {
               nerdices.
             </p>
             <div className="btn glow-on-hover">
-              <a href="/curriculo/MichaelPiccagli_DevWebFrontEndJunior.pdf" target="_blank"
-                className="btn">
-                Veja meu CV
-              </a>
+              <a
+                href="/documents/MichaelPiccagli_DevWebFrontEndJunior.pdf" target="_blank" rel="noopener noreferrer" className="btn">Veja meu CV</a>
             </div>
           </div>
         </div>

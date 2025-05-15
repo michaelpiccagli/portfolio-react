@@ -43,8 +43,8 @@
   @keyframes c-glowing-github {
    0% {
       box-shadow: 0 0 2px var(--secondary-color), 0 0 2px var(--secondary-color),
-        0 0 5px #161616, 0 0 5px #161616, 0 0 5px #161616, 0 0 5px #161616,
-        0 0 10px #161616, 0 0 10px #161616;
+        0 0 5px #f0f6fc, 0 0 5px #f0f6fc, 0 0 5px #f0f6fc, 0 0 5px #f0f6fc,
+        0 0 10px #f0f6fc, 0 0 10px #f0f6fc;
     }
     to {
       box-shadow: 0 0 2.5px var(--secondary-color), 0 0 2.5px,
