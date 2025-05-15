@@ -7,7 +7,6 @@ import './styles/responsive.css';
 
 import Header from './components/Header';
 import Home from './components/Home';
-import MenuHamburguer from './components/MenuHamburguer';
 import About from './components/About';
 import Skills from './components/skills';
 import Projects from './components/Projects';
@@ -20,7 +19,6 @@ const App = () => {
     <>
       <Header />
       <Home />
-      <MenuHamburguer />
       <About />
       <Skills />
       <Projects />
