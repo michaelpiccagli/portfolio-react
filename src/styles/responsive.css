@@ -8,7 +8,6 @@
   .projects .container-projects {
     padding: 0 var(--mobile-padding);
   }
-
   .cards-wrapper {
     grid-template-columns: repeat(4, 1fr);
   }
