@@ -2,47 +2,45 @@ import React, { useEffect, useRef } from 'react';
 import ScrollReveal from 'scrollreveal';
 
 const HomePage = () => {
+  const pRef = useRef(null);
+  const h1Ref = useRef(null);
+  const spanRef = useRef(null);
+  const h2Ref = useRef(null);
   const buttonTop = useRef(null);
   const menuMobile = useRef(null);
-  
-  // Função typeWriter
-  const typeWriter = (element, text, delay = 100, callback) => {
-    let i = 0;
-    function typing() {
-      if (i < text.length) {
-        element.innerHTML += text.charAt(i);
-        i++;
-        setTimeout(typing, delay);
-      } else if (callback) {
-        setTimeout(callback, 300);
+
+  // Função typeWriter refatorada para Promise
+  const typeWriter = (element, text, delay = 100) => {
+    return new Promise((resolve) => {
+      let i = 0;
+      element.innerHTML = ""; // limpa o conteúdo antes de começar
+
+      function typing() {
+        if (i < text.length) {
+          element.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typing, delay);
+        } else {
+          resolve();
+        }
       }
-    }
-    typing();
+
+      typing();
+    });
   };
 
   useEffect(() => {
-    // Elementos da tela para efeito de digitação
-    const p = document.querySelector(".text-home p");
-    const h1 = document.querySelector(".text-home h1");
-    const span = document.querySelector(".text-home span");
-    const h2 = document.querySelector(".text-home h2");
+    const runTypeWriter = async () => {
+      if (!pRef.current || !h1Ref.current || !spanRef.current || !h2Ref.current) return;
 
-    // Limpando o conteúdo para efeito de digitação
-    p.innerHTML = "";
-    h1.innerHTML = "";
-    span.innerHTML = "";
-    h2.innerHTML = "";
+      await typeWriter(pRef.current, "Olá ✌️,", 100);
+      await typeWriter(h1Ref.current, "Meu nome é", 100);
+      await typeWriter(spanRef.current, "Michael Piccagli", 100);
+      await typeWriter(h2Ref.current, "Desenvolvedor Front-End", 100);
+    };
 
-    // Iniciando a animação de digitação
-    typeWriter(p, "Olá ✌️,", 100, function () {
-      typeWriter(h1, "Meu nome é", 100, function () {
-        typeWriter(span, "Michael Piccagli", 100, function () {
-          typeWriter(h2, "Desenvolvedor Front-End", 100);
-        });
-      });
-    });
+    runTypeWriter();
 
-    // ScrollReveal (com efeito de animação)
     const sr = ScrollReveal({ reset: true });
 
     sr.reveal('.text-home', { duration: 3000, origin: 'top', distance: '150px' });
@@ -54,7 +52,6 @@ const HomePage = () => {
     sr.reveal('.container-projetos', { origin: 'bottom', distance: '100px', duration: 2000 });
     sr.reveal('.cards-wrapper', { origin: 'top', distance: '150px', duration: 2000 });
 
-    // Scroll Event para exibir o botão "voltar ao topo"
     const handleScroll = () => {
       if (window.scrollY > 350) {
         buttonTop.current.classList.add('show');
@@ -62,41 +59,39 @@ const HomePage = () => {
         buttonTop.current.classList.remove('show');
       }
 
-      if (window.scrollY > 400) {
+      if (window.scrollY > 400 && menuMobile.current) {
         menuMobile.current.checked = false;
       }
     };
 
     window.addEventListener('scroll', handleScroll);
 
-    // Cleanup
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  // Função para o botão "voltar ao topo"
-  const scrollToTop = () => {
+  const scrollToTop = (e) => {
+    e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
     <div>
-      {/* Texto da home */}
       <div className="text-home">
-        <p></p>
-        <h1></h1>
-        <span></span>
-        <h2></h2>
+        <p ref={pRef}></p>
+        <h1 ref={h1Ref}></h1>
+        <span ref={spanRef}></span>
+        <h2 ref={h2Ref}></h2>
       </div>
 
-      {/* Botão de voltar ao topo */}
       <a
         id="backToTopButton"
         ref={buttonTop}
         href="#home"
         onClick={scrollToTop}
-        style={{ position: 'fixed', bottom: '1rem', right: '2.5rem', opacity: 0, visibility: 'hidden', transform: 'translateY(100%)', transition: '200ms' }}
+        className="back-to-top-btn"
+        aria-label="Voltar ao topo"
       >
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="20" cy="20" r="20" fill="#00856F" />
@@ -105,9 +100,8 @@ const HomePage = () => {
         </svg>
       </a>
 
-      {/* Menu Hamburguer */}
       <input type="checkbox" id="menu-hamburguer" ref={menuMobile} />
-      {/* Outras partes da página */}
+      {/* Resto do conteúdo da página */}
     </div>
   );
 };
