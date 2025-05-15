@@ -1,16 +1,46 @@
+// src/components/Home.jsx
+import React, { useEffect, useRef } from 'react';
+import ScrollReveal from 'scrollreveal';
 import '../styles/home.css';
 import imgProfile from '../assets/img/michael-1.jpg';
 
 const Home = () => {
+  const menuMobile = useRef(null);
+
+  useEffect(() => {
+    const sr = ScrollReveal({ reset: true });
+
+    sr.reveal('.text-home', { duration: 3000, origin: 'top', distance: '150px' });
+    sr.reveal('.img-box', { duration: 2000, origin: 'left', distance: '150px' });
+    sr.reveal('.imagem-sobre-mim', { origin: 'bottom', distance: '150px', duration: 2000 });
+    sr.reveal('.informacoes-sobre-mim', { origin: 'bottom', distance: '150px', duration: 2000 });
+    sr.reveal('.section-title', { origin: 'top', distance: '150px', duration: 2000 });
+    sr.reveal('.container-habilidades', { origin: 'bottom', distance: '150px', duration: 2000 });
+    sr.reveal('.container-projetos', { origin: 'bottom', distance: '100px', duration: 2000 });
+    sr.reveal('.cards-wrapper', { origin: 'top', distance: '150px', duration: 2000 });
+
+    const handleScroll = () => {
+      if (window.scrollY > 400 && menuMobile.current) {
+        menuMobile.current.checked = false;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <section className="home" id="home">
       <div className="container">
         <div className="row full-screen align-items-center">
           <div className="text-home">
-            <p></p>
-            <h1></h1>
-            <span></span>
-            <h2></h2>
+            <p>Olá ✌️,</p>
+            <h1>Meu nome é</h1>
+            <span>Michael Piccagli</span>
+            <h2>Desenvolvedor Front-end</h2>
 
             <div className="social-media">
               <a href="https://www.linkedin.com/in/michaelpiccagli" className="outer-shadow" target="_blank" rel="noopener noreferrer">
@@ -35,6 +65,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* Para controle de menu mobile, se necessário */}
+      <input type="checkbox" id="menu-hamburguer" ref={menuMobile} />
     </section>
   );
 };

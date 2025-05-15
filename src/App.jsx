@@ -13,7 +13,7 @@ import Skills from './components/skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import BackToTopButton from './components/BackToTopButton';
-import HomePage from './components/HomePage';
+
 
 const App = () => {
   return (
@@ -26,7 +26,6 @@ const App = () => {
       <Projects />
       <Footer />
       <BackToTopButton />
-      <HomePage />
     </>
   );
 };

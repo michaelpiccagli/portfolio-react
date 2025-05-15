@@ -1,5 +1,6 @@
 import '../styles/footer.css';
 import SocialLinks from './SocialLinks';
+import '../styles/back-to-top-button.css';
 
 const Footer = () => {
   return (

@@ -99,23 +99,4 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.3s ease;
 }
 
-/* BACK TO TOP */
-#backToTopButton {
-  position: fixed;
-  bottom: 1rem;
-  right: 2.5rem;
-  opacity: 0;
-  visibility: hidden;
 
-  transform: translateY(100%);
-  transition: 200ms;
-}
-#backToTopButton svg circle {
-  fill:var(--secondary-color)
-}
-
-#backToTopButton.show {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
