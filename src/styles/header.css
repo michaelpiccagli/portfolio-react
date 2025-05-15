@@ -23,6 +23,7 @@
 
 .header nav ul {
   display: flex;
+  gap: 10px;
 }
 
 .header nav li a {
@@ -43,59 +44,46 @@
   border-radius: 5px;
 }
 
-/* ESCONDENDO O CHECKBOX */
+/* Oculta o checkbox */
 #menu-hamburguer {
   display: none;
 }
 
-/* ÍCONE HAMBURGUER BASE (3 LINHAS) */
-.header label {
-  display: none; /* só aparece no mobile no responsive.css */
+/* Ícone do menu */
+.menu {
+  display: none;
   cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  height: 60px;
-  width: 60px;
-}
-
-.header .menu {
-  display: none; /* só aparece no mobile */
   width: 30px;
-  height: 24px;
+  height: 25px;
   position: relative;
 }
 
-/* Linhas do hambúrguer */
-.header .menu .hamburguer {
-  width: 30px;
-  height: 3px;
-  background-color: white;
-  border-radius: 2px;
-  position: relative;
-  transition: 0.3s ease-in-out;
-}
-
-.header .menu .hamburguer::before,
-.header .menu .hamburguer::after {
-  content: '';
+.hamburguer,
+.hamburguer::before,
+.hamburguer::after {
+  content: "";
   position: absolute;
-  width: 30px;
   height: 3px;
+  width: 100%;
   background-color: white;
   border-radius: 2px;
-  left: 0;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.header .menu .hamburguer::before {
-  top: -8px;
+.hamburguer {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.header .menu .hamburguer::after {
-  top: 8px;
+.hamburguer::before {
+  top: -10px;
 }
 
-/* Animação de transformação em X */
+.hamburguer::after {
+  top: 10px;
+}
+
+/* Animação ao clicar */
 #menu-hamburguer:checked + label .hamburguer {
   background-color: transparent;
 }
