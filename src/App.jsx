@@ -12,7 +12,7 @@ import About from './components/About';
 import Skills from './components/skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
-import BackToTopButton from './components/BackToTopButton';
+import TopButton from './components/TopButton';
 
 
 const App = () => {
@@ -25,7 +25,7 @@ const App = () => {
       <Skills />
       <Projects />
       <Footer />
-      <BackToTopButton />
+      <TopButton />
     </>
   );
 };
