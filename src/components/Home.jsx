@@ -1,4 +1,3 @@
-// src/components/Home.jsx
 import React, { useEffect, useRef } from 'react';
 import ScrollReveal from 'scrollreveal';
 import '../styles/home.css';
@@ -12,11 +11,11 @@ const Home = () => {
 
     sr.reveal('.text-home', { duration: 3000, origin: 'top', distance: '150px' });
     sr.reveal('.img-box', { duration: 2000, origin: 'left', distance: '150px' });
-    sr.reveal('.imagem-sobre-mim', { origin: 'bottom', distance: '150px', duration: 2000 });
-    sr.reveal('.informacoes-sobre-mim', { origin: 'bottom', distance: '150px', duration: 2000 });
+    sr.reveal('.image-about', { origin: 'bottom', distance: '150px', duration: 2000 });
+    sr.reveal('.informations-about', { origin: 'bottom', distance: '150px', duration: 2000 });
     sr.reveal('.section-title', { origin: 'top', distance: '150px', duration: 2000 });
-    sr.reveal('.container-habilidades', { origin: 'bottom', distance: '150px', duration: 2000 });
-    sr.reveal('.container-projetos', { origin: 'bottom', distance: '100px', duration: 2000 });
+    sr.reveal('.container-skills', { origin: 'bottom', distance: '150px', duration: 2000 });
+    sr.reveal('.container-projects', { origin: 'bottom', distance: '100px', duration: 2000 });
     sr.reveal('.cards-wrapper', { origin: 'top', distance: '150px', duration: 2000 });
 
     const handleScroll = () => {
@@ -65,9 +64,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      {/* Para controle de menu mobile, se necessário */}
-      <input type="checkbox" id="menu-hamburguer" ref={menuMobile} />
     </section>
   );
 };

@@ -28,22 +28,22 @@
   }
 
   @media(max-width: 980px) {
-    .about.row {
+    .about .row {
         justify-content: center;
     }
 
-    .about.image-about{
+    .about .image-about {
         max-width: 100%;
         padding: 0 var(--mobile-padding);
         margin-bottom: 50px;
     }
 
-    .about.informations-about{
+    .about .informations-about {
         padding: 0 var(--mobile-padding);
         text-align: center;
     }
 
-    .about.informations-about{
+    .about .informations-about {
         max-width: 100%;
     }
 }
