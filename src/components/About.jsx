@@ -6,11 +6,11 @@ const About = () => {
       <div className="container">
         <div className="row">
           <div className="section-title">
-            <h2 className="typing">Sobre mim</h2>
+            <h2 className="typing no-select">Sobre mim</h2>
           </div>
         </div>
         <div className="row">
-          <div className="image-about">
+          <div className="image-about no-select">
             <div className="img-box inner-shadow">
               <img
                 src="./src/assets/img/michael-2.jpg"
@@ -19,7 +19,7 @@ const About = () => {
               />
             </div>
           </div>
-          <div className="informations-about">
+          <div className="informations-about no-select">
             <p>
               <strong>Olá! Meu nome é Michael Piccagli, sou bacharel em Sistemas de Informação</strong>
               E atualmente estou desenvolvendo minhas hard skills de front-end com o curso DevQuest em formação! Sou

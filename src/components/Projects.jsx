@@ -9,7 +9,7 @@ function Projects() {
       <div className="container">
         <div className="row">
           <div className="section-title">
-            <h2>Projetos</h2>
+            <h2 className="no-select">Projetos</h2>
           </div>
         </div>
 

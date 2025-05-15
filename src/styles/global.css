@@ -99,4 +99,7 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.3s ease;
 }
 
-
+.no-select {
+  user-select: none;
+  cursor: default;
+}

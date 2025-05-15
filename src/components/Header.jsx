@@ -6,7 +6,7 @@ const Header = () => {
       <div className="container">
         <div className="row justify-content-between align-items-center">
           <a href="#">
-            <h1 className="logo">MP</h1>
+            <h1 className="logo no-select">MP</h1>
           </a>
           <nav>
             <input id="menu-hamburguer" type="checkbox" />

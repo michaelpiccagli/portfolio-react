@@ -37,28 +37,28 @@ const Home = () => {
       <div className="container">
         <div className="row full-screen align-items-center">
           <div className="text-home">
-            <p>Olá ✌️,</p>
-            <h1>Meu nome é</h1>
-            <span>Michael Piccagli</span>
-            <h2>Desenvolvedor Front-end</h2>
+            <p className="no-select">Olá ✌️,</p>
+            <h1 className="no-select">Meu nome é</h1>
+            <span className="no-select">Michael Piccagli</span>
+            <h2 className="no-select">Desenvolvedor Front-end</h2>
 
             <div className="social-media">
               <a href="https://www.linkedin.com/in/michaelpiccagli" className="outer-shadow" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-linkedin-in"></i>
+                <i className="fab fa-linkedin-in no-select"></i>
               </a>
               <a href="https://wa.me/5511947376865" className="outer-shadow" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-whatsapp"></i>
+                <i className="fab fa-whatsapp no-select"></i>
               </a>
               <a href="https://github.com/michaelpiccagli" className="outer-shadow" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-github"></i>
+                <i className="fab fa-github no-select"></i>
               </a>
               <a href="https://www.instagram.com/michael_piccagli/" className="outer-shadow" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-instagram"></i>
+                <i className="fab fa-instagram no-select"></i>
               </a>
             </div>
           </div>
 
-          <div className="img-home">
+          <div className="img-home no-select">
             <div className="img-box">
               <img src={imgProfile} alt="Michael Piccagli" />
             </div>

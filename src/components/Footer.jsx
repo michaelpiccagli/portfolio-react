@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <h2>Me envie uma mensagem!</h2>
+        <h2 className="no-select">Me envie uma mensagem!</h2>
         <SocialLinks className="social-media centralized" />
       </div>
     </footer>
