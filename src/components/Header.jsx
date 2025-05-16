@@ -1,6 +1,17 @@
+import React, { useState } from 'react';
 import '../styles/header.css';
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className="header">
       <div className="container">
@@ -9,16 +20,13 @@ const Header = () => {
             <h1 className="logo no-select">MP</h1>
           </a>
           <nav>
-            <input id="menu-hamburguer" type="checkbox" />
-            <label htmlFor="menu-hamburguer">
-              <div className="menu">
-                <span className="hamburguer"></span>
-              </div>
-            </label>
-            <ul>
-              <li><a href="#about">Sobre mim</a></li>
-              <li><a href="#skills">Habilidades</a></li>
-              <li><a href="#projects">Meus projetos</a></li>
+            <div className="menu" onClick={toggleMenu} aria-label="Menu hamburguer" tabIndex={0} role="button" onKeyPress={toggleMenu}>
+              <span className={`hamburguer ${menuOpen ? 'open' : ''}`}></span>
+            </div>
+            <ul className={menuOpen ? 'open' : ''}>
+              <li><a href="#about" onClick={closeMenu}>Sobre mim</a></li>
+              <li><a href="#skills" onClick={closeMenu}>Habilidades</a></li>
+              <li><a href="#projects" onClick={closeMenu}>Meus projetos</a></li>
             </ul>
           </nav>
         </div>
@@ -28,3 +36,4 @@ const Header = () => {
 };
 
 export default Header;
+
