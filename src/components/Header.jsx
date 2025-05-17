@@ -20,7 +20,7 @@ const Header = () => {
             <h1 className="logo no-select">MP</h1>
           </a>
           <nav>
-            <div className="menu" onClick={toggleMenu} aria-label="Menu hamburguer" tabIndex={0} role="button" onKeyPress={toggleMenu}>
+            <div className="menu align-items-center" onClick={toggleMenu} aria-label="Menu hamburguer" tabIndex={0} role="button" onKeyPress={toggleMenu}>
               <span className={`hamburguer ${menuOpen ? 'open' : ''}`}></span>
             </div>
             <ul className={menuOpen ? 'open' : ''}>
