@@ -101,7 +101,7 @@
   display: flex;
   gap: 10px;
 }
-
+/*media queries header*/
 @media (max-width: 900px) {
 
   .header .menu {
