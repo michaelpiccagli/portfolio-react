@@ -2,6 +2,7 @@ import './styles/reset.css';
 import './styles/variables.css';
 import './styles/global.css';
 import './styles/animations.css';
+import './styles/header.css'; 
 import './styles/responsive.css';
 
 import Header from './components/Header';

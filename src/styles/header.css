@@ -26,18 +26,16 @@
   gap: 10px;
 }
 
-
 .header nav li a {
   color: var(--white-color);
   text-transform: capitalize;
   font-size: 2rem;
   font-weight: 500;
   padding: 10px 20px;
-  transition: 0.2s;
+  transition: all 0.5s ease-in;
   border-radius: 50px;
   letter-spacing: 1px;
   user-select: none;
-  transition: all 0.5s ease-in;
 }
 
 .header nav ul li a:hover {
@@ -95,45 +93,4 @@
 .header .hamburguer.open::after {
   transform: rotate(-45deg);
   top: 0;
-}
-
-.header nav ul {
-  display: flex;
-  gap: 10px;
-}
-/*media queries header no css geral*/
-@media (max-width: 900px) {
-
-  .header .menu {
-    display: flex;
-  }
-
-  .header nav ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 70px; 
-    right: 20px;
-    background-color: var(--dark-background-color);
-    padding: 20px;
-    border-radius: 8px;
-    width: 200px;
-    z-index: 1000;
-  }
-
-  .header nav ul.open {
-    display: flex;
-  }
-
-  .header nav ul li a {
-    padding: 15px 10px;
-    font-size: 1.8rem;
-    border-radius: 5px;
-    text-align: center;
-    transition: all 0.3s ease;
-  }
-
-  .header nav ul li {
-    margin-bottom: 8px;
-  }
 }
