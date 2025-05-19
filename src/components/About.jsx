@@ -23,8 +23,7 @@ const About = () => {
             <p>
               <strong>Olá! Meu nome é Michael Piccagli, sou bacharel em Sistemas de Informação</strong>
               E atualmente estou desenvolvendo minhas hard skills de front-end com o curso DevQuest em formação! Sou
-              apaixonado por tecnologia e acredito no poder do aprendizado contínuo. Após anos atuando como eletricista,
-              gesseiro e pintor autônomo, decidi migrar para a área de tecnologia, onde encontrei minha verdadeira
+              apaixonado por tecnologia e acredito no poder do aprendizado contínuo. Após anos atuando como eletricista, decidi migrar para a área de tecnologia, onde encontrei minha verdadeira
               vocação. Sou bacharel em Sistemas de Informação, formação na qual adquiri conhecimentos em redes de
               computadores, segurança da informação, desenvolvimento de sistemas, engenharia de software, UML e gestão de
               projetos. Atualmente, estou focado no desenvolvimento Front-End, criando projetos pessoais com foco em
