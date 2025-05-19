@@ -1,3 +1,54 @@
+@media (max-width: 2560px) {
+  .home .img-home .img-box img {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1458px) {
+  .projects .container-projects {
+    padding: 0 var(--mobile-padding);
+  }
+  .cards-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1280px) {
+  .home .text-home,
+  .home .img-home {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: var(--mobile-padding);
+  }
+  .header {
+    padding: var(--mobile-padding);
+  }
+
+  .social-media {
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 980px) {
+  .about .row {
+    justify-content: center;
+  }
+
+  .about .image-about {
+    max-width: 100%;
+    padding: 0 var(--mobile-padding);
+    margin-bottom: 50px;
+  }
+
+  .about .informations-about {
+    padding: 0 var(--mobile-padding);
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 900px) {
   .header .menu {
     display: flex;
@@ -32,55 +83,7 @@
   .header nav ul li {
     margin-bottom: 8px;
   }
-}
 
-@media (max-width: 2560px) {
-  .home .img-home .img-box img {
-    height: 100%;
-  }
-}
-
-@media screen and (max-width: 1458px) {
-  .projects .container-projects {
-    padding: 0 var(--mobile-padding);
-  }
-  .cards-wrapper {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (max-width: 1280px) {
-  .home .text-home,
-  .home .img-home {
-    flex: 0 0 100%;
-    max-width: 100%;
-    text-align: center;
-    padding: var(--mobile-padding);
-  }
-  .header {
-    padding: var(--mobile-padding);
-  }
-}
-
-@media (max-width: 980px) {
-  .about .row {
-    justify-content: center;
-  }
-
-  .about .image-about {
-    max-width: 100%;
-    padding: 0 var(--mobile-padding);
-    margin-bottom: 50px;
-  }
-
-  .about .informations-about {
-    padding: 0 var(--mobile-padding);
-    text-align: center;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 900px) {
   .cards-wrapper {
     grid-template-columns: 1fr;
   }
@@ -105,13 +108,17 @@
   }
 
   .social-media {
-    margin: 0 auto;
+    margin-bottom: 50px;
   }
 }
 
 @media screen and (max-width: 413px) {
   .home .text-home {
     padding: 15px;
+  }
+
+  .footer .container {
+    margin-bottom: 50px;
   }
 
   .social-media {
