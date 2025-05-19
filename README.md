@@ -2,12 +2,9 @@
 
 Bem-vindo ao meu portfólio pessoal, onde apresento meus projetos, habilidades e minha trajetória na área de desenvolvimento Front-End.
 
+## 🎥 Preview - Portifólio
+
 ![Preview do Portfólio](assets/gifs/preview-portfolio.gif)
-
-<p align="center">
-  <img src="assets/gifs/preview-portfolio.gif" alt="Demonstração do Portfólio" width="100%" />
-</p>
-
 
 ---
 
