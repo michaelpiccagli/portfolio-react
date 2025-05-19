@@ -1,4 +1,5 @@
 import '../styles/about.css';
+import imgProfile2 from '../assets/img/michael-2.jpg';
 
 const About = () => {
   return (
@@ -13,8 +14,7 @@ const About = () => {
           <div className="image-about no-select">
             <div className="img-box inner-shadow">
               <img
-                src="./src/assets/img/michael-2.jpg"
-                alt="foto de Michael Piccagli, desenvolvedor Front-end"
+                src={imgProfile2} alt="Foto de Michael Piccagli, desenvolvedor Front-end"
                 className="outer-shadow"
               />
             </div>
