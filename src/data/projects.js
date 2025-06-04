@@ -8,6 +8,7 @@ import yugiohImg from '../assets/img/clone-yu-gi-oh.jpg';
 import godOfWarImg from '../assets/img/god-of-war-ragnarok.jpg';
 import conselhosImg from '../assets/img/gerador-conselhos.jpg';
 import githubApiImg from '../assets/img/consumo-de-api.jpg';
+import gesso2000Img from '../assets/img/gesso-2000.jpg';
 
 export const projects = [
   {
@@ -79,5 +80,12 @@ export const projects = [
     date: '25 Abril 2025',
     image: githubApiImg,
     link: 'https://michaelpiccagli.github.io/fetch-github-api/'
+  },
+  {
+    title: 'Gesso 2000',
+    description: 'Projeto realizado utilizando NextJs "Site de Gesso"',
+    date: '04 Junho 2025',
+    image: gesso2000Img,
+    link: 'https://www.gesso2000.com.br/'
   }
 ];
