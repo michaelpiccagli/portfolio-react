@@ -57,7 +57,7 @@ const Skills = () => {
               <i className="devicon devicon-react-original"></i>
             </div>
             <h3 className="react">React</h3>
-            <p>Tenho conhecimentos básicos sobre React e atualmente estudando sobre seus conceitos</p>
+            <p>Conheço os conceitos sobre Hooks, Props, react router, Components e styled components</p>
           </div>
 
           <div className="skill sass">
