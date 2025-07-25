@@ -26,7 +26,7 @@ const About = () => {
               apaixonado por tecnologia e acredito no poder do aprendizado contínuo. Após anos atuando como eletricista, decidi migrar para a área de tecnologia, onde encontrei minha verdadeira
               vocação. Sou bacharel em Sistemas de Informação, formação na qual adquiri conhecimentos em redes de
               computadores, segurança da informação, desenvolvimento de sistemas, engenharia de software, UML e gestão de
-              projetos. Atualmente, estou focado no desenvolvimento Front-End, criando projetos pessoais com foco em
+              projetos. Atualmente, estou focado no desenvolvimento Full Stack, criando projetos pessoais com foco em
               responsividade, código limpo e design intuitivo.
             </p>
             <p>

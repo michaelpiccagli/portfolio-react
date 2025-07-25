@@ -59,7 +59,34 @@ const Skills = () => {
             <h3 className="react">React</h3>
             <p>Conheço os conceitos sobre Hooks, Props, react router, Components e styled components</p>
           </div>
-
+          <div className="skill typescript">
+            <div className="logo">
+              <i className="devicon devicon-typescript-plain"></i>
+            </div>
+            <h3 className="typescript">TypeScript</h3>
+            <p>Tenho conhecimento em tipagem estática, interfaces, tipos genéricos, e como aplicar TypeScript para aumentar a segurança e manutenção do código em projetos JavaScript.</p>
+          </div>
+          <div className="skill nextjs">
+            <div className="logo">
+              <i className="devicon devicon-nextjs-plain"></i>
+            </div>
+            <h3 className="nextjs">Next.js</h3>
+            <p> Entendo conceitos como renderização estática (SSG), renderização server-side (SSR), rotas dinâmicas e otimização de performance usando Next.js em aplicações React.</p>
+          </div>
+          <div className="skill postgresql">
+            <div className="logo">
+              <i className="devicon-postgresql-plain colored"></i>
+            </div>
+            <h3 className="postgresql">PostgreSQL</h3>
+            <p>Conhecimento em modelagem de banco de dados relacional, criação de tabelas, consultas SQL, índices e operações CRUD utilizando PostgreSQL.</p>
+          </div>
+          <div className="skill nodejs">
+            <div className="logo">
+              <i className="devicon-nodejs-plain colored"></i>
+            </div>
+            <h3 className="nodejs">Node.js</h3>
+            <p> Experiência com criação de servidores, manipulação de APIs REST, uso de Express.js, e gerenciamento de pacotes com npm para desenvolvimento backend com Node.js.</p>
+          </div>
           <div className="skill sass">
             <div className="logo">
               <i className="devicon devicon-sass-original"></i>

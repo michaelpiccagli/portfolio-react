@@ -39,7 +39,7 @@ const Home = () => {
             <p className="no-select">Olá ✌️,</p>
             <h1 className="no-select">Meu nome é</h1>
             <span className="no-select">Michael Piccagli</span>
-            <h2 className="no-select">Desenvolvedor Front-end</h2>
+            <h2 className="no-select">Desenvolvedor Full Stack</h2>
 
             <div className="social-media">
               <a href="https://www.linkedin.com/in/michaelpiccagli" className="outer-shadow" target="_blank" rel="noopener noreferrer">
