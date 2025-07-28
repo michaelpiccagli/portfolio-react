@@ -43,7 +43,7 @@ const About = () => {
             </p>
             <div className="btn glow-on-hover">
               <a
-                href="/documents/MichaelPiccagli_DevWebFrontEndJunior.pdf" target="_blank" rel="noopener noreferrer" className="btn">Veja meu CV</a>
+                href="/documents/MichaelPiccagli_DevFullStackJunior.pdf" target="_blank" rel="noopener noreferrer" className="btn">Veja meu CV</a>
             </div>
           </div>
         </div>
